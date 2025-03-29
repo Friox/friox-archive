@@ -1,0 +1,52 @@
+{
+  "name": "gatsby-starter-friox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "gatsby-starter-friox",
+  "author": "Friox",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^3.14.2",
+    "@emotion/react": "^11.14.0",
+    "@giscus/react": "^3.1.0",
+    "@reduxjs/toolkit": "^2.6.1",
+    "gatsby": "^5.14.1",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-image": "^3.14.0",
+    "gatsby-plugin-sharp": "^5.14.0",
+    "gatsby-plugin-sitemap": "^6.14.0",
+    "gatsby-remark-autolink-headers": "^6.14.0",
+    "gatsby-remark-figure-caption": "^2.0.0",
+    "gatsby-remark-images": "^7.14.0",
+    "gatsby-remark-katex": "^7.14.0",
+    "gatsby-remark-prismjs": "^7.14.0",
+    "gatsby-source-filesystem": "^5.14.0",
+    "gatsby-transformer-remark": "^6.14.0",
+    "gatsby-transformer-sharp": "^5.14.0",
+    "katex": "^0.16.21",
+    "next-themes": "^0.4.6",
+    "prismjs": "^1.30.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
+    "react-redux": "^9.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "gatsby-plugin-tsconfig-paths": "^1.0.6",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
