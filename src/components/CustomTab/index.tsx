@@ -28,7 +28,7 @@ const CustomTab: React.FC<Props> = ({ seriesCount }) => {
   const active = useAppSelector((state) => state.tabIndex)
   const postCnt = useAppSelector((state) => state.postFilter.filteredPosts.length)
   return (
-    <Container maxW='3xl' borderBottomWidth='1px' marginTop='30px' paddingBottom='4' md={{ padding: '24px' }}>
+    <Container maxW='3xl' borderBottomWidth='1px' marginTop='30px' paddingBottom='4' md={{ marginTop: '12px', padding: '24px' }}>
       <Stack css={tabContainerStyle} flexDirection='row'>
         <Stack direction='row' justifyContent='center' gap='18px' width='fit-content'>
           <Button css={tabButtonStyle} variant={ active == 0 ? 'solid' : 'outline' } onClick={() => dispatch(setTabIndex(0))}>
