@@ -2,8 +2,6 @@ node_modules/
 .cache/
 public
 src/gatsby-types.d.ts
-src/constants/config.ts
-contents
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos
