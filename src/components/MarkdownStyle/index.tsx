@@ -213,6 +213,9 @@ const style: SystemStyleObject = {
     },
     "& a.anchor.before": {
       display: 'none'
+    },
+    "& hr": {
+      marginBlock: '48px'
     }
   },
 }
