@@ -45,6 +45,7 @@ const postSummaryStyle: SystemStyleObject = {
   color: 'fg.muted',
   fontSize: 'sm',
   lineHeight: 1.6,
+  wordBreak: 'keep-all',
   md: {
     fontSize: 'md'
   }
