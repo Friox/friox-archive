@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
       <Container maxW='6xl' direction='row'>
         <Stack justifyContent='space-between' direction='row'>
           <Stack fontSize='xs' md={{ fontSize: 'sm' }}>
-            <Text>sitename, Powered by Gatsby and <Link variant='underline' href='https://github.com/Friox/gatsby-starter-friox' target='_blank'>gatsby-starter-friox</Link></Text>
+            <Text>Friox Archive., Powered by Gatsby and <Link variant='underline' href='https://github.com/Friox/gatsby-starter-friox' target='_blank'>gatsby-starter-friox</Link></Text>
             <Text color='fg.muted'>{config.footerCopyright}</Text>
           </Stack>
         </Stack>
