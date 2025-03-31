@@ -8,10 +8,10 @@ const GiscusWidget = () => {
   return (
     <Box>
       <Giscus
-        repo="Friox/friox-archive-comments"
-        repoId="R_kgDOOQG5Xg"
-        category="Announcements"
-        category-id="DIC_kwDOOQG5Xs4Coiil"
+        repo="Friox/friox-archive"
+        repoId="R_kgDOORNENA"
+        category="Comments"
+        category-id="DIC_kwDOORNENM4ConHm"
         mapping="pathname"
         strict="0"
         reactions-enabled="1"
