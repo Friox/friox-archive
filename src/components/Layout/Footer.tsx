@@ -1,5 +1,5 @@
 import React from 'react'
-import { SystemStyleObject, Container, Stack, Text, Box } from '@chakra-ui/react'
+import { SystemStyleObject, Container, Stack, Text, Box, Link } from '@chakra-ui/react'
 import { config } from '@/constants/config'
 
 const footerWrapperStyle: SystemStyleObject = {
@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
       <Container maxW='6xl' direction='row'>
         <Stack justifyContent='space-between' direction='row'>
           <Stack>
-            <Text>friox archive.</Text>
+            <Text fontSize='sm'>sitename, Powered by Gatsby and <Link variant='underline' href='https://github.com/Friox/gatsby-starter-friox'>gatsby-starter-friox</Link></Text>
             <Text fontSize='sm' color='fg.muted'>{config.footerCopyright}</Text>
           </Stack>
         </Stack>
