@@ -14,7 +14,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d public --cname blog.friox.dev"
   },
   "homepage": "https://friox.github.io/friox-archive/",
   "dependencies": {
