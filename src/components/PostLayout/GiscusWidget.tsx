@@ -12,7 +12,7 @@ const GiscusWidget = () => {
         repoId="R_kgDOORNENA"
         category="Comments"
         category-id="DIC_kwDOORNENM4ConHm"
-        mapping="pathname"
+        mapping="title"
         strict="0"
         reactions-enabled="1"
         emit-metadata="0"
