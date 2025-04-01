@@ -1,12 +1,15 @@
 ---
 slug: msa-spring-1
-title: Spring Cloud, MSA을 위한 핵심기술
+title: Spring Cloud, MSA를 위한 핵심기술
 description: Spring Cloud와 MSA 환경에서 사용하는 기술을 학습하고 정리했습니다. Spring Discovery Client, RestTemplate, 인증방식, Config Server 등 주요 개념과 간단한 구현 방법을 다룹니다.
 createAt: 2025-04-01
 category: 개발
 tags: [DevOps, SpringCloud, DiscoveryClient, ConfigServer, Deepdive]
 series: deepdive - MSA
 ---
+
+> **kakao x goorm deepdive 백엔드 3회차**  
+> 이 게시물은 해당 과정 참여 중 별도로 학습한 내용을 정리한 것입니다.
 
 ## Spring Dicovery Client
 로드밸런서와 그 안에 등록된 서비스에 대해 가장 낮은 수준으로 접근할 수 있음.  
