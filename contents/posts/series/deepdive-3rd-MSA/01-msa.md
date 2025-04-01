@@ -5,6 +5,7 @@ description: 마이크로서비스 아키텍처(MSA)는 애플리케이션을 �
 createAt: 2025-03-31
 category: 개발
 tags: [DevOps, SpringCloud, Eureka, Deepdive]
+series: deepdive - MSA
 ---
 
 > **kakao x goorm deepdive 백엔드 3회차**  
