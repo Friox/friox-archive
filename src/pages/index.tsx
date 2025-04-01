@@ -65,7 +65,7 @@ export const pageQuery = graphql`
         frontmatter {
           slug
           category
-          createAt(formatString: "YYYY. MM. DD")
+          createAt(formatString: "YYYY. MM. DD.")
           title
           description
           tags
