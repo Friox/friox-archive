@@ -81,7 +81,7 @@ export const pageQuery = graphql`
         nodes {
           frontmatter {
             slug
-            createAt(formatString: "YYYY. MM. DD")
+            createAt(formatString: "YYYY. MM. DD.")
             title
           }
         }
