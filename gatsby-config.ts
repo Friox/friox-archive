@@ -99,6 +99,15 @@ const config: GatsbyConfig = {
           }
         ],
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: "G-WF90JE4CSX",
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: "gatsby" },
+        enableWebVitalsTracking: true,
+      }
     }
   ],
 }
