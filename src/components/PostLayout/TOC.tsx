@@ -5,7 +5,7 @@ const tocWrapperStyle: SystemStyleObject = {
   position: 'absolute',
   height: '100%',
   left: '100%',
-  marginLeft: '12px'
+  marginLeft: '48px'
 }
 
 const tocStyle: SystemStyleObject = {

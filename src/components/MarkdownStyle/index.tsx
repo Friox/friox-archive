@@ -58,7 +58,8 @@ const style: SystemStyleObject = {
     },
     "& table": {
       borderWidth: 2,
-      fontSize: 'sm'
+      fontSize: 'sm',
+      marginTop: '12px'
     },
     "& table, th, td": {
       border: '1px solid',
