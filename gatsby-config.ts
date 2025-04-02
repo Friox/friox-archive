@@ -19,6 +19,8 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
+        host: 'https://blog.friox.dev',
+        sitemap: 'https://blog.friox.dev/sitemap-index.xml',
         policy: [{userAgent: '*', allow: '/'}]
       }
     },
