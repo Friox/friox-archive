@@ -42,6 +42,7 @@ export const Head: HeadFC<Queries.MainPageQuery> = ({ data }) => {
   const siteUrl = data.site?.siteMetadata?.siteUrl
   return (
     <>
+      <meta name="google-site-verification" content="eoYfiTNZJzawUCjN23Bp0AGCZR_pk25Y6Ffdjs5mGyY" />
       <title>{config.siteTitle}</title>
       <meta name="description" content={config.siteDescription} />
       {siteUrl && <link rel="canonical" href={siteUrl} />}
