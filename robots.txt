@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://blog.friox.dev/sitemap-index.xml
+Host: https://blog.friox.dev
