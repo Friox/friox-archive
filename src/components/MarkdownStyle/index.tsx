@@ -216,6 +216,10 @@ const style: SystemStyleObject = {
     },
     "& hr": {
       marginBlock: '48px'
+    },
+    "& blockquote :is(h1, h2, h3):first-of-type": {
+      marginTop: '0px',
+      lineHeight: 1.6
     }
   },
 }
