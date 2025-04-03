@@ -1,6 +1,8 @@
-import React from 'react'
-import { Text, Stack, Icon, SystemStyleObject } from '@chakra-ui/react'
+import React, { useEffect, useMemo, useState } from 'react'
+import { Text, Stack, Icon, SystemStyleObject, HStack, IconButton, Show } from '@chakra-ui/react'
 import { FaAngleDoubleRight } from 'react-icons/fa'
+import { calculatePaginatedPosts } from '@/utils/pagination'
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const wrapperStyle: SystemStyleObject = {
   border: '1px solid',
@@ -39,10 +41,26 @@ type Props = {
 }
 
 const SeriesIndexList: React.FC<Props> = ({ fm, seriesList }) => {
+
+  const pageSize = 5
+  const allPage = Math.ceil(seriesList.nodes.length / pageSize)
+  const [ page, setPage ] = useState(1)
+
+  const paginatedPosts = useMemo(() => calculatePaginatedPosts([...seriesList.nodes], page, pageSize), [seriesList, page])
+
+  useEffect(() => {
+    for (let i = 0; i < seriesList.nodes.length; i++) {
+      if (fm.slug == seriesList.nodes[i].frontmatter.slug) {
+        setPage(Math.floor(i / pageSize) + 1)
+        break
+      }
+    }
+  }, [])
+
   return (
     <Stack css={wrapperStyle} gap='3'>
       <Text css={seriesTitleStyle}>Series: {fm.series}</Text>
-      {seriesList.nodes.map(series => (
+      {paginatedPosts.map(series => (
         <Stack key={series.frontmatter.slug} direction='row' alignItems='center'>
           <Icon as={FaAngleDoubleRight} color={fm.title == series.frontmatter.title ? 'teal.solid' : 'bg.emphasized'} />
           <Text
@@ -52,6 +70,17 @@ const SeriesIndexList: React.FC<Props> = ({ fm, seriesList }) => {
           >{series.frontmatter.title}</Text>
         </Stack>
       ))}
+      <Show when={ allPage > 1 }>
+        <HStack justifyContent='end'>
+          <Text color='fg.muted' fontSize='xs' md={{ fontSize: 'sm' }}>{page} / {allPage}</Text>
+          <IconButton size='xs' rounded='full' variant='outline' onClick={() => setPage(page - 1 < 1 ? 1 : page - 1)}>
+            <FaArrowLeft />
+          </IconButton>
+          <IconButton size='xs' rounded='full' variant='outline' onClick={() => setPage(page + 1 > allPage ? allPage : page + 1)}>
+            <FaArrowRight />
+          </IconButton>
+        </HStack>
+      </Show>
     </Stack>
   )
 }

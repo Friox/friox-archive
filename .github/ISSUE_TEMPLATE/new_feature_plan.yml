@@ -1,0 +1,38 @@
+name: 🚀 New Feature Plan
+description: 작업할 새로운 기능 또는 개선사항의 계획을 작성합니다
+title: "[FEAT] "
+labels:
+  - enhancement
+  - planning
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### 작성하기 전에 아래 내용을 확인해주세요:
+        - 작업하려는 내용을 이슈 제목에 잘 요약했습니다.
+
+  - type: textarea
+    attributes:
+      label: 📄 계획 설명
+      description: 진행할 작업에 대한 설명을 자세히 작성해주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: ✏️ 구현 계획
+      description: 각 단계에서 수행할 작업을 설명해주세요.
+      placeholder: |
+        - [ ] 작업 단계 1
+        - [ ] 작업 단계 2
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 👍🏻 추가 정보
+      description: 계획과 관련된 추가 정보를 입력해주세요. (선택 사항)

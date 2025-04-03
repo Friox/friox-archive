@@ -1,0 +1,28 @@
+name: ✨ Feature Request
+description: 새로운 기능 또는 개선사항을 제안합니다
+title: "[REQUEST] "
+labels:
+  - enhancement
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### 제안하기 전에 아래 내용을 확인해주세요:
+        - 현재 존재하지 않는 기능임을 확인했습니다.
+        - 제안하는 명확한 이유가 존재합니다.
+        - 제목이 제안의 내용을 잘 표현하고 있습니다.
+
+  - type: textarea
+    attributes:
+      label: 📄 설명
+      description: 제안하고 싶은 내용을 자세히 설명해주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 👍🏻 추가 정보
+      description: 제안과 관련된 추가 정보를 입력해주세요. (선택 사항)
