@@ -8,7 +8,7 @@ assignees: []
 body:
   - type: markdown
     attributes:
-      value: |
+      value: |  
       
         ### 버그를 보고하기 전에 아래 내용을 확인해주세요:
         - 동일한 버그에 대한 이슈가 없음을 확인했습니다.
