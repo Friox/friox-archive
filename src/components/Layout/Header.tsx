@@ -84,7 +84,7 @@ const Header: React.FC<Props> = ({ enableSearch }) => {
         <Stack direction='row' justify='space-between' align='center'>
           <Stack gap='4px'>
             <Text css={siteTitleStyle} onClick={() => { location.href='/'}}>{config.siteTitle}</Text>
-            <Code fontSize='14px' colorPalette='green' hideBelow='md'>{config.siteDescription}</Code>
+            <Code fontSize='14px' colorPalette='green' hideBelow='md' width='fit-content'>{config.siteDescription}</Code>
           </Stack>
           {enableSearch && <SearchInput isMobile={false}/>}
           <Stack direction='row' align='center' gap='8px' md={{gap: '16px'}}>
