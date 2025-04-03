@@ -10,6 +10,7 @@ body:
   - type: markdown
     attributes:
       value: |
+      
         ### 작성하기 전에 아래 내용을 확인해주세요:
         - 작업하려는 내용을 이슈 제목에 잘 요약했습니다.
 
