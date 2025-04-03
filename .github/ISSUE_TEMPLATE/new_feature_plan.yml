@@ -1,6 +1,6 @@
 name: 🚀 New Feature Plan
 description: 작업할 새로운 기능 또는 개선사항의 계획을 작성합니다
-title: "[FEATURE] "
+title: "[FEAT] "
 labels:
   - enhancement
   - planning
