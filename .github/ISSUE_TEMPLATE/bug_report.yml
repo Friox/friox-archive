@@ -19,8 +19,8 @@ body:
       label: 📄 버그 설명
       description: 발견한 버그와 기대했던 동작을 설명해주세요.
       placeholder: 스크린샷이 있으면 더 좋습니다!
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     id: steps-to-reproduce
@@ -31,8 +31,8 @@ body:
         1. 첫 번째 단계
         2. 두 번째 단계
         3. ...
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     id: additional-context

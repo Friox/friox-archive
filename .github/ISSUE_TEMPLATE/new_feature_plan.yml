@@ -17,8 +17,8 @@ body:
     attributes:
       label: 📄 계획 설명
       description: 진행할 작업에 대한 설명을 자세히 작성해주세요.
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     attributes:
@@ -28,8 +28,8 @@ body:
         - [ ] 작업 단계 1
         - [ ] 작업 단계 2
         - [ ] ...
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     attributes:
