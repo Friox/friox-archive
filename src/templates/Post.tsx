@@ -44,6 +44,7 @@ export const query = graphql`
       excerpt(pruneLength: 200, truncate: true)
       html
       frontmatter {
+        slug
         title
         description
         createAt(formatString: "YYYY. MM. DD.")
