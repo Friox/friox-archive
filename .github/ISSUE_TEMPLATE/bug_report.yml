@@ -1,0 +1,41 @@
+name: 🐞 Bug Report
+description: 버그를 제보합니다
+title: "[BUG] "
+labels:
+  - bug
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        버그를 보고하기 전에 아래 내용을 확인해주세요:
+        - [ ] 동일한 버그에 대한 이슈가 없음을 확인했습니다.
+        - [ ] 문제를 재현할 수 있는 단계나 설명을 준비했습니다.
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 📄 버그 설명
+      description: 발견한 버그와 기대했던 동작을 설명해주세요.
+      placeholder: 스크린샷이 있으면 더 좋습니다!
+      validations:
+        required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: 📈 재현 단계
+      description: 문제를 재현하기 위한 단계 또는 설명을 작성해주세요.
+      placeholder: |
+        1. 첫 번째 단계
+        2. 두 번째 단계
+        3. ...
+      validations:
+        required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 👍🏻 추가 정보
+      description: 문제를 해결하는 데 도움이 될 추가 정보를 입력해주세요. (선택 사항)
