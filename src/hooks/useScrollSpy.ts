@@ -37,7 +37,7 @@ export const usePostScrollSpy = (options?: PostScrollSpyOptions) => {
     // Intersection Observer
     const setupIntersectionObserver = () =>  {
       const tocLinks = document.querySelectorAll('#toc-wrapper a:not(.anchor)')
-      const headers = document.querySelectorAll('#post-wrapper h1[id],h2[id],h3[id]')
+      const headers = document.querySelectorAll('#post-wrapper :is(h1[id], h2[id], h3[id]):not(blockquote *)')
       const visibleBools: boolean[] = Array(headers.length).fill(false)
 
       if (tocLinks.length === headers.length && tocLinks.length > 0) {
