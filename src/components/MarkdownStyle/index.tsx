@@ -48,7 +48,10 @@ const style: SystemStyleObject = {
       }
     },
     "& ol, ul": {
-      marginLeft: '32px',
+      marginLeft: '12px',
+      md: {
+        marginLeft: '24px'
+      }
     },
     "& ol": {
       listStyleType: 'decimal'
