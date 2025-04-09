@@ -35,7 +35,7 @@ type Props = { toc: NonNullable<NonNullable<Queries.BlogPostPageQuery['post']>['
 const TOC: React.FC<Props> = ({ toc }) => {
   return (
     <Box css={tocWrapperStyle} hideBelow='xl'>
-      <Box position='sticky' top='110px'>
+      <Box position='sticky' top='128px'>
         <Box>
           <Text marginLeft='24px'>목차</Text>
         </Box>
