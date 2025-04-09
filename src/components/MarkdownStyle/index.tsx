@@ -75,6 +75,7 @@ const style: SystemStyleObject = {
       padding: '6px 12px'
     },
     "& blockquote": {
+      width: 'fit-content',
       padding: '12px 18px',
       border: '1px solid',
       borderLeft: '5px solid',
