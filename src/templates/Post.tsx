@@ -7,7 +7,7 @@ import PostLayout from '@/components/PostLayout'
 const Post: React.FC<PageProps<Queries.BlogPostPageQuery>> = ({ data }) => {
   return (
     <Layout enableSearch={false}>
-      <Container maxW='3xl'>
+      <Container maxW='4xl'>
         <PostLayout post={data} />
       </Container>
     </Layout>
