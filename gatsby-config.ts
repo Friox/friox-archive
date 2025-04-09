@@ -54,6 +54,12 @@ const config: GatsbyConfig = {
         gfm: true,
         plugins: [
           {
+            resolve: `gatsby-remark-embed-markdown`,
+            options: {
+              directory: `${__dirname}/contents/embed/`
+            }
+          },
+          {
             resolve: `gatsby-remark-autolink-headers`,
             options: {}
           },
