@@ -31,6 +31,9 @@ const style: SystemStyleObject = {
         fontSize: '3xl',
       }
     },
+    "& h1::before": {
+      content: '"🍀 "'
+    },
     "& h2": {
       fontSize: 'xl',
       marginTop: '40px',
